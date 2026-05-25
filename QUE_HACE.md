@@ -1,3 +1,3 @@
 # ¿Qué hace el sistema?
 
-> *En una frase. No qué gestiona: **qué hace**.*
+El sistema distribuye el trabajo de un grupo permitiendo asignar tareas y desglosarlas en actividades menores.

@@ -4,16 +4,16 @@
   * Función: Es el notario del proyecto y el gestor de la carpeta `.opencode/conversations/` y del archivo `conversation-log.md`.
   * Activación: Se activa de forma inmediata y automática CADA VEZ que el usuario escriba la palabra exacta "log".
   * Acción: Al leer "log", ejecutará obligatoriamente estas dos tareas en orden:
-    1. Crear registro extendido: Generará un nuevo archivo Markdown en el directorio `.opencode/conversations/` (nombrado de forma secuencial, ej: `sesion-[DD/MM/AAAA][HH:MM].md`). Este archivo contendrá un volcado extenso de la sesión, incluyendo todos los prompts intercambiados.
+    1. Crear registro extendido: Generará un nuevo archivo Markdown en el directorio `.opencode/conversations/` (nombrado de forma secuencial, ej: `sesion-DD-MM-AAAA(HH:MM).md`). Este archivo contendrá un volcado extenso de la sesión, incluyendo todos los prompts intercambiados.
     2. Actualizar índice: Insertará una nueva entrada al principio del archivo `conversation-log.md` (en la raíz del repositorio), siguiendo ESTRICTAMENTE esta plantilla literal:
 
-    ## [DD/MM/AAAA][HH:MM] [Título breve de lo que se pidió]
+    ## [DD-MM-AAAA](HH:MM) [Título breve de lo que se pidió]
 
     Prompt: [Resumen fiel o textual del prompt principal de la sesión]
 
     Resultado: [Descripción concreta de los diagramas, código o configuraciones producidas]
 
-    Enlace: [Enlace markdown relativo al archivo creado, ej: `[.opencode/conversations/sesion-[DD/MM/AAAA][HH:MM].md`](./.opencode/conversations/sesion-[DD/MM/AAAA][HH:MM].md)]
+    Enlace: [Enlace markdown relativo al archivo creado, ej: `[.opencode/conversations/sesion-DD-MM-AAAA(HH:MM).md`](./.opencode/conversations/sesion-DD-MM-AAAA(HH:MM).md)]
 
     Decisión: 
   * Actitud: Meticuloso, objetivo y obediente. BAJO NINGUNA CIRCUNSTANCIA el agente escribirá texto en el apartado "Decisión:". Debe dejarlo completamente en blanco (un espacio) para que el desarrollador humano documente la justificación lógica a posteriori.
